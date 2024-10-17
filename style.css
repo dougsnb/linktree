@@ -1,0 +1,181 @@
+/* Global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    background-image: url(dark-grunge-texture\ \(1\).webp);
+    background-color: #292929;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(43, 43, 43);
+    border: 2px solid #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 350px;
+    height: 750px;
+    width: 100%;
+}
+
+.profile-img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 3px solid #ffffff; 
+    margin-bottom: 10px; 
+    margin-top: 25px;
+}
+
+.container h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 12px;
+    margin: 1;
+}
+
+.link-list {
+    list-style: none; 
+    padding: 0; 
+    display: block;
+    margin-top: 60px; 
+}
+
+.link-list li {
+    margin: 15px 0; 
+}
+
+.link-list a {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    padding: 10px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px; 
+    transition: background-color 0.3s ease; 
+    width: 100%; 
+    border: solid 1px white;
+    letter-spacing: 1px;
+}
+
+.link-list a:hover {
+    background-color: rgb(180, 180, 180); 
+}
+
+.link-list img {
+    width: 30px;
+    height: 30px; 
+}
+
+
+.link-list span {
+    flex: 0.9;
+    text-align: center; 
+}
+
+/* Media Queries */
+
+/* Desktop (≥ 1200px) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 600px; /* Aumenta a largura da container */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Aumenta o tamanho da fonte */
+    }
+}
+
+/* Notebook (≥ 992px e < 1200px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 500px; /* Largura média para notebooks */
+    }
+
+    h1 {
+        font-size: 1.4em; /* Aumenta o tamanho da fonte */
+    }
+}
+
+/* Tablet (≥ 768px e < 992px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 400px; /* Largura média para tablets */
+    }
+
+    h1 {
+        font-size: 1.3em; /* Aumenta o tamanho da fonte */
+    }
+}
+
+/* Celular (< 768px) */
+@media (max-width: 767px) {
+    .container {
+        padding: 20px; /* Reduz o padding */
+        max-width: 90%; /* Largura máxima para celulares */
+    }
+
+    .profile-img {
+        width: 120px; /* Reduz a largura da imagem */
+        height: 120px; /* Reduz a altura da imagem */
+    }
+
+    h1 {
+        font-size: 1.2em; /* Mantém o tamanho da fonte */
+    }
+}
+
+/* Media query específica para o iPhone 11 (largura de 414px) */
+@media (max-width: 414px) and (min-width: 375px) {
+    /* Ajustar o layout geral */
+    .container {
+        padding: 15px;
+        max-width: 90%; /* Reduz a largura da container */
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    }
+
+    .profile-img {
+        width: 100px; /* Diminui a largura da imagem */
+        height: 100px; /* Diminui a altura da imagem */
+    }
+
+    h1 {
+        font-size: 1.1em; /* Reduz o tamanho da fonte */
+    }
+
+    .link-list {
+        margin-top: 30px; /* Aumenta o espaço antes das redes sociais */
+    }
+
+    .link-list a {
+        padding: 8px; /* Reduz o padding dos links */
+    }
+
+    .link-list img {
+        width: 25px; /* Diminui o tamanho dos ícones */
+        height: 25px;
+        margin-right: 5px; /* Reduz o espaço entre o ícone e o texto */
+    }
+
+    /* Ajustes adicionais */
+    .link-list li {
+        margin: 5px 0; /* Reduz o espaçamento entre os itens da lista */
+    }
+}
